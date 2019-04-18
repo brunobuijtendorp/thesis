@@ -1,0 +1,373 @@
+Run 1:  Thu Apr 18 10:26:00 2019.  tudelft52.1.47018.
+        Em version 16.56 (64-bit Windows) on SRV138 local.
+
+  Project:  D:\Bruno\190418\aSiloss.son.
+
+  Parameter combination: 1 of 8.
+
+    Frequency:  5 GHZ
+      Independent parameter values:
+        log10tandelta = -8.0
+      Dependent parameter values:
+        tandelta = 1.0e-8
+      Subsectioning at 5 GHz with Eeff of 5.5.
+      Subsectioning time:  0.703 seconds.
+      De-embedding information for left box wall port(s):
+        Left SOC Electric Wall: 25.5 microns length, 357 subsections, 12 MB.
+        Left SOC Magnetic Wall: 51 microns length, 705 subsections, 16 MB.
+      De-embedding information for right box wall port(s):
+        Right SOC Electric Wall: 25.5 microns length, 357 subsections, 12 MB.
+        Right SOC Magnetic Wall: 51 microns length, 705 subsections, 16 MB.
+      Em license feature:  emhighperformance.
+      Circuit requires 403 subsections and 63 MB of memory.
+
+      Subsections by level and type:
+      Level 0:
+        Staircase:  403
+
+      Required memory by type:
+        System matrix:            1 MB
+        Elemental subsections:
+          Primary structure:      14 MB
+          Left standard:          21 MB
+          Right standard:         21 MB
+        Fourier transform:        2 MB
+        Waveguide mode:           2 MB
+        Adaptive band synthesis:  0 MB
+        Miscellaneous:            1 MB
+        TOTAL REQUIRED MEMORY:    63 MB
+
+      Matrix solver:  internal 64-bit SSE with loss.
+      Simulation mode:  local machine.
+      Threads:  using 8 thread(s), 8 core(s) available.
+      Waveguide mode time:  0.047 seconds.
+      Fourier transform time:  0.126 seconds.
+      Coupling time:  1 second.
+      Loss time:  0.015 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0.016 seconds.
+      De-embedding time for left box wall:
+        SOC Electric Wall Std: 0.797 seconds.
+        SOC Magnetic Wall Std: 2 seconds.
+        Total:                 3 seconds.
+      Total time per frequency:  6 seconds.
+
+  Parameter combination: 2 of 8.
+
+    Frequency:  5 GHZ
+      Independent parameter values:
+        log10tandelta = -7.0
+      Dependent parameter values:
+        tandelta = 1.0e-7
+      Subsectioning at 5 GHz with Eeff of 5.5.
+      Subsectioning time:  0.703 seconds.
+      De-embedding information for left box wall port(s):
+        Left SOC Electric Wall: 25.5 microns length, 357 subsections, 12 MB.
+        Left SOC Magnetic Wall: 51 microns length, 705 subsections, 16 MB.
+      De-embedding information for right box wall port(s):
+        Right SOC Electric Wall: 25.5 microns length, 357 subsections, 12 MB.
+        Right SOC Magnetic Wall: 51 microns length, 705 subsections, 16 MB.
+      Circuit requires 403 subsections and 63 MB of memory.
+
+      Subsections by level and type:
+      Level 0:
+        Staircase:  403
+
+      Required memory by type:
+        System matrix:            1 MB
+        Elemental subsections:
+          Primary structure:      14 MB
+          Left standard:          21 MB
+          Right standard:         21 MB
+        Fourier transform:        2 MB
+        Waveguide mode:           2 MB
+        Adaptive band synthesis:  0 MB
+        Miscellaneous:            1 MB
+        TOTAL REQUIRED MEMORY:    63 MB
+
+      Waveguide mode time:  0.063 seconds.
+      Fourier transform time:  0.125 seconds.
+      Coupling time:  1 second.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0.016 seconds.
+      De-embedding time for left box wall:
+        SOC Electric Wall Std: 0.859 seconds.
+        SOC Magnetic Wall Std: 2 seconds.
+        Total:                 3 seconds.
+      Total time per frequency:  7 seconds.
+
+  Parameter combination: 3 of 8.
+
+    Frequency:  5 GHZ
+      Independent parameter values:
+        log10tandelta = -6.0
+      Dependent parameter values:
+        tandelta = 1.0e-6
+      Subsectioning at 5 GHz with Eeff of 5.5.
+      Subsectioning time:  0.672 seconds.
+      De-embedding information for left box wall port(s):
+        Left SOC Electric Wall: 25.5 microns length, 357 subsections, 12 MB.
+        Left SOC Magnetic Wall: 51 microns length, 705 subsections, 16 MB.
+      De-embedding information for right box wall port(s):
+        Right SOC Electric Wall: 25.5 microns length, 357 subsections, 12 MB.
+        Right SOC Magnetic Wall: 51 microns length, 705 subsections, 16 MB.
+      Circuit requires 403 subsections and 63 MB of memory.
+
+      Subsections by level and type:
+      Level 0:
+        Staircase:  403
+
+      Required memory by type:
+        System matrix:            1 MB
+        Elemental subsections:
+          Primary structure:      14 MB
+          Left standard:          21 MB
+          Right standard:         21 MB
+        Fourier transform:        2 MB
+        Waveguide mode:           2 MB
+        Adaptive band synthesis:  0 MB
+        Miscellaneous:            1 MB
+        TOTAL REQUIRED MEMORY:    63 MB
+
+      Waveguide mode time:  0.047 seconds.
+      Fourier transform time:  0.140 seconds.
+      Coupling time:  1 second.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0.016 seconds.
+      De-embedding time for left box wall:
+        SOC Electric Wall Std: 0.812 seconds.
+        SOC Magnetic Wall Std: 2 seconds.
+        Total:                 3 seconds.
+      Total time per frequency:  7 seconds.
+
+  Parameter combination: 4 of 8.
+
+    Frequency:  5 GHZ
+      Independent parameter values:
+        log10tandelta = -5.0
+      Dependent parameter values:
+        tandelta = 1.0e-5
+      Subsectioning at 5 GHz with Eeff of 5.5.
+      Subsectioning time:  0.688 seconds.
+      De-embedding information for left box wall port(s):
+        Left SOC Electric Wall: 25.5 microns length, 357 subsections, 12 MB.
+        Left SOC Magnetic Wall: 51 microns length, 705 subsections, 16 MB.
+      De-embedding information for right box wall port(s):
+        Right SOC Electric Wall: 25.5 microns length, 357 subsections, 12 MB.
+        Right SOC Magnetic Wall: 51 microns length, 705 subsections, 16 MB.
+      Circuit requires 403 subsections and 63 MB of memory.
+
+      Subsections by level and type:
+      Level 0:
+        Staircase:  403
+
+      Required memory by type:
+        System matrix:            1 MB
+        Elemental subsections:
+          Primary structure:      14 MB
+          Left standard:          21 MB
+          Right standard:         21 MB
+        Fourier transform:        2 MB
+        Waveguide mode:           2 MB
+        Adaptive band synthesis:  0 MB
+        Miscellaneous:            1 MB
+        TOTAL REQUIRED MEMORY:    63 MB
+
+      Waveguide mode time:  0.063 seconds.
+      Fourier transform time:  0.126 seconds.
+      Coupling time:  1 second.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0.016 seconds.
+      De-embedding time for left box wall:
+        SOC Electric Wall Std: 0.828 seconds.
+        SOC Magnetic Wall Std: 2 seconds.
+        Total:                 3 seconds.
+      Total time per frequency:  7 seconds.
+
+  Parameter combination: 5 of 8.
+
+    Frequency:  5 GHZ
+      Independent parameter values:
+        log10tandelta = -4.0
+      Dependent parameter values:
+        tandelta = 1.0e-4
+      Subsectioning at 5 GHz with Eeff of 5.5.
+      Subsectioning time:  0.672 seconds.
+      De-embedding information for left box wall port(s):
+        Left SOC Electric Wall: 25.5 microns length, 357 subsections, 12 MB.
+        Left SOC Magnetic Wall: 51 microns length, 705 subsections, 16 MB.
+      De-embedding information for right box wall port(s):
+        Right SOC Electric Wall: 25.5 microns length, 357 subsections, 12 MB.
+        Right SOC Magnetic Wall: 51 microns length, 705 subsections, 16 MB.
+      Circuit requires 403 subsections and 63 MB of memory.
+
+      Subsections by level and type:
+      Level 0:
+        Staircase:  403
+
+      Required memory by type:
+        System matrix:            1 MB
+        Elemental subsections:
+          Primary structure:      14 MB
+          Left standard:          21 MB
+          Right standard:         21 MB
+        Fourier transform:        2 MB
+        Waveguide mode:           2 MB
+        Adaptive band synthesis:  0 MB
+        Miscellaneous:            1 MB
+        TOTAL REQUIRED MEMORY:    63 MB
+
+      Waveguide mode time:  0.047 seconds.
+      Fourier transform time:  0.142 seconds.
+      Coupling time:  1 second.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0.031 seconds.
+      De-embedding time for left box wall:
+        SOC Electric Wall Std: 0.828 seconds.
+        SOC Magnetic Wall Std: 2 seconds.
+        Total:                 3 seconds.
+      Total time per frequency:  7 seconds.
+
+  Parameter combination: 6 of 8.
+
+    Frequency:  5 GHZ
+      Independent parameter values:
+        log10tandelta = -3.0
+      Dependent parameter values:
+        tandelta = 0.001
+      Subsectioning at 5 GHz with Eeff of 5.5.
+      Subsectioning time:  0.672 seconds.
+      De-embedding information for left box wall port(s):
+        Left SOC Electric Wall: 25.5 microns length, 357 subsections, 12 MB.
+        Left SOC Magnetic Wall: 51 microns length, 705 subsections, 16 MB.
+      De-embedding information for right box wall port(s):
+        Right SOC Electric Wall: 25.5 microns length, 357 subsections, 12 MB.
+        Right SOC Magnetic Wall: 51 microns length, 705 subsections, 16 MB.
+      Circuit requires 403 subsections and 63 MB of memory.
+
+      Subsections by level and type:
+      Level 0:
+        Staircase:  403
+
+      Required memory by type:
+        System matrix:            1 MB
+        Elemental subsections:
+          Primary structure:      14 MB
+          Left standard:          21 MB
+          Right standard:         21 MB
+        Fourier transform:        2 MB
+        Waveguide mode:           2 MB
+        Adaptive band synthesis:  0 MB
+        Miscellaneous:            1 MB
+        TOTAL REQUIRED MEMORY:    63 MB
+
+      Waveguide mode time:  0.047 seconds.
+      Fourier transform time:  0.124 seconds.
+      Coupling time:  1 second.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0.016 seconds.
+      De-embedding time for left box wall:
+        SOC Electric Wall Std: 0.812 seconds.
+        SOC Magnetic Wall Std: 2 seconds.
+        Total:                 3 seconds.
+      Total time per frequency:  7 seconds.
+
+  Parameter combination: 7 of 8.
+
+    Frequency:  5 GHZ
+      Independent parameter values:
+        log10tandelta = -2.0
+      Dependent parameter values:
+        tandelta = 0.01
+      Subsectioning at 5 GHz with Eeff of 5.5.
+      Subsectioning time:  0.672 seconds.
+      De-embedding information for left box wall port(s):
+        Left SOC Electric Wall: 25.5 microns length, 357 subsections, 12 MB.
+        Left SOC Magnetic Wall: 51 microns length, 705 subsections, 16 MB.
+      De-embedding information for right box wall port(s):
+        Right SOC Electric Wall: 25.5 microns length, 357 subsections, 12 MB.
+        Right SOC Magnetic Wall: 51 microns length, 705 subsections, 16 MB.
+      Circuit requires 403 subsections and 63 MB of memory.
+
+      Subsections by level and type:
+      Level 0:
+        Staircase:  403
+
+      Required memory by type:
+        System matrix:            1 MB
+        Elemental subsections:
+          Primary structure:      14 MB
+          Left standard:          21 MB
+          Right standard:         21 MB
+        Fourier transform:        2 MB
+        Waveguide mode:           2 MB
+        Adaptive band synthesis:  0 MB
+        Miscellaneous:            1 MB
+        TOTAL REQUIRED MEMORY:    63 MB
+
+      Waveguide mode time:  0.047 seconds.
+      Fourier transform time:  0.126 seconds.
+      Coupling time:  1 second.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0.016 seconds.
+      De-embedding time for left box wall:
+        SOC Electric Wall Std: 0.813 seconds.
+        SOC Magnetic Wall Std: 2 seconds.
+        Total:                 3 seconds.
+      Total time per frequency:  7 seconds.
+
+  Parameter combination: 8 of 8.
+
+    Frequency:  5 GHZ
+      Independent parameter values:
+        log10tandelta = -1.0
+      Dependent parameter values:
+        tandelta = 0.1
+      Subsectioning at 5 GHz with Eeff of 5.5.
+      Subsectioning time:  0.672 seconds.
+      De-embedding information for left box wall port(s):
+        Left SOC Electric Wall: 25.5 microns length, 357 subsections, 12 MB.
+        Left SOC Magnetic Wall: 51 microns length, 705 subsections, 16 MB.
+      De-embedding information for right box wall port(s):
+        Right SOC Electric Wall: 25.5 microns length, 357 subsections, 12 MB.
+        Right SOC Magnetic Wall: 51 microns length, 705 subsections, 16 MB.
+      Circuit requires 403 subsections and 63 MB of memory.
+
+      Subsections by level and type:
+      Level 0:
+        Staircase:  403
+
+      Required memory by type:
+        System matrix:            1 MB
+        Elemental subsections:
+          Primary structure:      14 MB
+          Left standard:          21 MB
+          Right standard:         21 MB
+        Fourier transform:        2 MB
+        Waveguide mode:           2 MB
+        Adaptive band synthesis:  0 MB
+        Miscellaneous:            1 MB
+        TOTAL REQUIRED MEMORY:    63 MB
+
+      Waveguide mode time:  0.047 seconds.
+      Fourier transform time:  0.108 seconds.
+      Coupling time:  1 second.
+      Loss time:  0 seconds.
+      Matrix fill time:  1 second.
+      Matrix solve time:  0.016 seconds.
+      De-embedding time for left box wall:
+        SOC Electric Wall Std: 0.843 seconds.
+        SOC Magnetic Wall Std: 2 seconds.
+        Total:                 3 seconds.
+      Total time per frequency:  7 seconds.
+
+    Post-Analysis:
+      Total time for 8 frequencies:  1 minute 1 second.
+
+Analysis completed Thu Apr 18 10:27:01 2019.
