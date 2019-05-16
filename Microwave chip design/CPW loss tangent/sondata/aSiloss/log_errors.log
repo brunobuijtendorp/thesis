@@ -1,0 +1,73 @@
+Run 1:  Thu Apr 18 10:26:00 2019.  tudelft52.1.47018.
+        Em version 16.56 (64-bit Windows) on SRV138 local.
+
+  Project:  D:\Bruno\190418\aSiloss.son.
+
+  Parameter combination: 1 of 8.
+
+    Frequency:  5 GHZ
+      Independent parameter values:
+        log10tandelta = -8.0
+      Dependent parameter values:
+        tandelta = 1.0e-8
+
+  Parameter combination: 2 of 8.
+
+    Frequency:  5 GHZ
+      Independent parameter values:
+        log10tandelta = -7.0
+      Dependent parameter values:
+        tandelta = 1.0e-7
+
+  Parameter combination: 3 of 8.
+
+    Frequency:  5 GHZ
+      Independent parameter values:
+        log10tandelta = -6.0
+      Dependent parameter values:
+        tandelta = 1.0e-6
+
+  Parameter combination: 4 of 8.
+
+    Frequency:  5 GHZ
+      Independent parameter values:
+        log10tandelta = -5.0
+      Dependent parameter values:
+        tandelta = 1.0e-5
+
+  Parameter combination: 5 of 8.
+
+    Frequency:  5 GHZ
+      Independent parameter values:
+        log10tandelta = -4.0
+      Dependent parameter values:
+        tandelta = 1.0e-4
+
+  Parameter combination: 6 of 8.
+
+    Frequency:  5 GHZ
+      Independent parameter values:
+        log10tandelta = -3.0
+      Dependent parameter values:
+        tandelta = 0.001
+
+  Parameter combination: 7 of 8.
+
+    Frequency:  5 GHZ
+      Independent parameter values:
+        log10tandelta = -2.0
+      Dependent parameter values:
+        tandelta = 0.01
+
+  Parameter combination: 8 of 8.
+
+    Frequency:  5 GHZ
+      Independent parameter values:
+        log10tandelta = -1.0
+      Dependent parameter values:
+        tandelta = 0.1
+
+    Post-Analysis:
+      Errors detected: 0    Warnings detected: 0.
+
+Analysis completed Thu Apr 18 10:27:01 2019.
