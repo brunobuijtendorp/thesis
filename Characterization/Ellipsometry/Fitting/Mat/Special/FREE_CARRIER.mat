@@ -1,0 +1,8 @@
+user mat
+USER
+3 0
+off - (hbar(1) )^2 / {epsz(0) * rho  * 1e-3 * tau *1e-15 * [ wvl*wvl + imag(wvl*hbar(1)*1e15 / tau)  ]  }
+0
+off 3.000000
+tau 0.100000
+rho 3.000000

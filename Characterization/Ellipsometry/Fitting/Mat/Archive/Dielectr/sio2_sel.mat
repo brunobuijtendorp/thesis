@@ -1,0 +1,9 @@
+Sellmeier fit to sio2_cr.mat
+USER
+2 1
+((  off + a*wvl*wvl/(wvl*wvl-b*b)  - e*wvl*wvl  )^2)^0.25   
+0
+A 0.614967
+B 0.114996
+E 0.010591
+off 1.492271

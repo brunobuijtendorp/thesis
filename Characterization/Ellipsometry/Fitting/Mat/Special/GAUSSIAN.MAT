@@ -1,0 +1,15 @@
+5 term Cauchy (sort of) for index, Gaussian absorption function, fit to SiO
+USER
+2 1
+A+B/wvl+C/wvl^2+D/wvl^3+F/wvl^4+G/wvl^5
+1.e5*ampl*exp(-((((wvl-beta)/broad)^2)^expon))
+A 1.740746
+B 0.345053
+C -0.419762
+D 0.294969
+F -0.081607
+G 0.007431
+ampl 0.000007
+beta 0.179748
+broad 0.172135
+expon 1.844570

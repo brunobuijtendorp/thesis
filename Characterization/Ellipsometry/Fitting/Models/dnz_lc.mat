@@ -1,0 +1,10 @@
+Liquid Crystal Index Difference (Nxy-Nz)
+USER
+3 1
+A*(1 + B*wvl^2 + C*wvl^4 + D*wvl^6 + E/wvl^2)
+0
+A 1.000000e-001
+B 0.000000e+000
+C 0.000000e+000
+D 0.000000e+000
+E 0.000000e+000

@@ -1,0 +1,15 @@
+Parametric model for 7059 glass
+USER
+2 1
+A+B/wvl+C/wvl^2+D/wvl^3+F/wvl^4+G/wvl^5
+aamp*exp(-((((wvl-abet)/abrd)^2)^axp))
+A 1.504806
+B 0.015815
+C -0.012938
+D 0.008544
+F -0.002087
+G 0.000197
+aamp 0.000133
+abet 0.270567
+abrd 0.020733
+axp 0.532751

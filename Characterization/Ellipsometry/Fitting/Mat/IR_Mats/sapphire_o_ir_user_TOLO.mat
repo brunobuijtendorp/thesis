@@ -1,0 +1,22 @@
+Sapphire ordinary (TOLO user layer) Phys Rev B, 61 8187 (2000)
+USER
+4 0
+(es*(Ea/Ca*Eb/Cb*Ec/Cc*Ed/Cd)^2)*TOLOCM(Ea,Ca,ga,pa)*TOLOCM(Eb,Cb,gb,pb)*TOLOCM(Ec,Cc,gc,pc)*TOLOCM(Ed,Cd,gd,pd)
+0
+Ca 3.865258e+002
+Ea 3.837984e+002
+ga 4.067731e+000
+Cb 4.814260e+002
+Eb 4.398228e+002
+gb 3.498106e+000
+Cc 6.301254e+002
+Ec 5.724044e+002
+gc 8.656156e+000
+Cd 9.079875e+002
+Ed 6.339501e+002
+gd 7.188724e+000
+pa 5.466267e+000
+pb 2.573190e+000
+pc 7.530518e+000
+pd 1.495196e+001
+es 9.336853e+000

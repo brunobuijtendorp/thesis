@@ -1,0 +1,12 @@
+User layer for SiO2 (200-2000nm)
+USER
+2 1
+A+B/wvl+C/wvl^2+D/wvl^3+E/wvl^4+f/wvl^5+g/wvl^6
+0
+A 1.400617
+B 0.124438
+C -0.126361
+D 0.068921
+E -0.019590
+f 0.002828
+g -0.000161

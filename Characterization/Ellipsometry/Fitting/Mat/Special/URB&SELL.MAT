@@ -1,0 +1,13 @@
+User-defined Material  (Sellmeier for n, Urbach for k)
+USER
+0 1
+(An+Bn*Wvl^2/(Wvl^2-Cn^2)+Dn*Wvl^2/(Wvl^2-En^2))^0.5
+Fn*Wvl*exp(-Gn*(1/Hn-1/Wvl))
+An 3.563600
+Bn 0.000000
+Cn 0.000000
+Dn 0.457663
+En 2738.260812
+Fn 0.000179
+Gn 22573.493061
+Hn 2279.947815

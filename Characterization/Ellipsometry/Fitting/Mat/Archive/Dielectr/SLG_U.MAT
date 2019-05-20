@@ -1,0 +1,27 @@
+Soda Lime Glass
+USER
+2 1
+A+B/wvl+C/wvl^2+D/wvl^3+F/wvl^4+G/wvl^5
+aamp*exp(-((((wvl-abet)/abrd)^2)^axp))+bamp*exp(-((((wvl-bbet)/bbrd)^2)^bxp))+camp*exp(-((((wvl-cbet)/cbrd)^2)^cxp))+damp*exp(-((((wvl-dbet)/dbrd)^2.0)^dxp))
+A 1.444979
+B 0.156048
+C -0.175031
+D 0.103168
+F -0.029177
+G 0.003171
+aamp 0.000016
+abet 0.313293
+abrd 0.013007
+axp 0.728850
+bamp 0.000004
+bbet 1.682883
+bbrd 0.481855
+bxp 0.591048
+camp 0.000004
+cbet 1.137446
+cbrd 0.375856
+cxp 1.591269
+damp 0.000670
+dbet 0.112383
+dbrd 0.110534
+dxp 1.211547
