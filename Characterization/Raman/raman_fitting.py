@@ -40,9 +40,8 @@ def polymodel(x,mu150,sigma150,a150,\
     return y
 
 def fit(x,y,poly=0):
-
-    x = x[0:len(x[x<700])]
-    y = y[0:len(x)]
+    y = y[x<700]
+    x = x[x<700]
 
     p0 = [150,50,550,\
           330,50,500,\
@@ -93,3 +92,9 @@ def fit(x,y,poly=0):
     ax.legend()
 
     return popt, ax
+
+def relative_intensity(popt,xmin=0,xmax=700,dx=0.001):
+    x = np.arange(0,700,0.001)
+    y = np.trapz(gaussian(x,popt[0],popt[1],popt[2])) / np.trapz(gaussian(x,popt[9],popt[10],popt[11]))
+    dtheta = (y - 0.606)/0.0078
+    return y, dtheta    
