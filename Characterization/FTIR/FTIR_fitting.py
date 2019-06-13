@@ -6,9 +6,13 @@ from scipy.integrate import trapz
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
-def fit_FTIR(data, show_windows=False):
+def fit_FTIR(data, thickness, show_windows=False):
+    thickness *= 1e-7 # convert from nm to cm
     x = data[:,0]
-    y = 2-np.log10(data[:,1])
+    absorbance = np.log10(100/data[:,1])
+    absorption_coeff = 2.303*absorbance/thickness 
+    y = absorption_coeff
+    #y = np.log10(100/data[:,1])
     
     # Coarse window selection
     peak1_window = [400,800]
@@ -57,7 +61,7 @@ def fit_FTIR(data, show_windows=False):
         y = gaussian(x,mu2000,sigma2000,a2000)  + gaussian(x,mu2080,sigma2080,a2080)
         return y
 
-    p0 = [2000,30,0.015, 2080,30,0.025]
+    p0 = [2000,30,1e3, 2080,30,1e3]
     #bounds = ([1950,0,0, 2050,0,0],[2005,np.inf,np.inf, 2150, np.inf, np.inf])
     popt2, pcov2 = curve_fit(model, peak2_x, c_peak2_y, p0=p0)
 
@@ -68,7 +72,7 @@ def fit_FTIR(data, show_windows=False):
     ax.plot(peak2_x, gaussian(peak2_x,popt2[3],popt2[4],popt2[5]), alpha=0.5)
     
     # Fitting content peak
-    p0 = [640,50,0.05]
+    p0 = [640,50,1e3]
     #bounds = ([1950,0,0, 2050,0,0],[2005,np.inf,np.inf, 2150, np.inf, np.inf])
     popt1, pcov1 = curve_fit(gaussian, peak1_x, c_peak1_y, p0=p0)
 
