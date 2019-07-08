@@ -28,7 +28,8 @@ dirtosave=uigetdir('','Select a directory to save, e.g. c1800');
 %import files
 % substrate=csvread(substrateloc);
 % sourcerefsub=csvread(sourcerefsubloc);
-sample=dlmread('250C_20190514.CSV',';');
+sample=dlmread('20190702P_1.CSV',';');
+subs = dlmread('20190702P_substrate.CSV',';');
 % sourcerefsample=csvread(sourcerefsampleloc);
 
 %check if data range is matching by only comparing first x-values and
@@ -41,7 +42,7 @@ sample=dlmread('250C_20190514.CSV',';');
 
 %calculate characteristic of sample
 wavenumbers=sample(:,1);
-intensities=sample(:,2);
+intensities=sample(:,2) / subs(:,2);
 
 %info filesize
 filesize=size(wavenumbers);

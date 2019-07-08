@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.interpolate import spline
+from scipy.interpolate import splrep
 from scipy.optimize import curve_fit
 from scipy.integrate import trapz
 import warnings
@@ -9,10 +9,9 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 def fit_FTIR(data, thickness, show_windows=False):
     thickness *= 1e-7 # convert from nm to cm
     x = data[:,0]
-    absorbance = np.log10(100/data[:,1])
+    absorbance = np.log10(1/data[:,1])
     absorption_coeff = 2.303*absorbance/thickness 
     y = absorption_coeff
-    #y = np.log10(100/data[:,1])
     
     # Coarse window selection
     peak1_window = [400,800]
@@ -29,7 +28,9 @@ def fit_FTIR(data, thickness, show_windows=False):
     x1 = peak1_x[not_peak1]
     y1= peak1_y[not_peak1]
 
-    y_spline1 = spline(x1,y1,peak1_x, order=1)
+    xe = np.amin(peak1_x)
+    xb = np.amax(peak1_x)
+    y_spline1 = splrep(x1,y1,xe=xe, xb=xb, k=1)
     c_peak1_y = peak1_y - y_spline1
 
     if show_windows == True:
@@ -72,7 +73,7 @@ def fit_FTIR(data, thickness, show_windows=False):
     ax.plot(peak2_x, gaussian(peak2_x,popt2[3],popt2[4],popt2[5]), alpha=0.5)
     
     # Fitting content peak
-    p0 = [640,50,1e3]
+    p0 = [640,50,1e-3]
     #bounds = ([1950,0,0, 2050,0,0],[2005,np.inf,np.inf, 2150, np.inf, np.inf])
     popt1, pcov1 = curve_fit(gaussian, peak1_x, c_peak1_y, p0=p0)
 

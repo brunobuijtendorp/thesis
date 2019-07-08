@@ -37,6 +37,36 @@
 \label{sec:system:sec3}
 
 \Blindtext[4][2]
-\section{Hydrogen content and bond types}
+\section{FTIR: Hydrogen content and microstructure}
+After measuring the transmission with FTIR, the determination of hydrogen bond concentrations can be divided into two problems:
+\begin{enumerate}
+\item Converting the transmission spectrum to an absorption coefficient spectrum.
+\item Calculating bond concentrations from the integrated absorbances, by multiplying with the correct proportionality constant.
+\end{enumerate}
+Note that the second point is not relevant for calculating the microstructure parameter $R^*$, because this is a ratio of integrated absorbances. Proportionality constants for the various bonds can be found in literature, and originate from other means of measuring the hydrogen content \cite{Langford1992}.
+\subsection{From transmission to absorption coefficient}
+\subsubsection{Lambert-Beer law}
+The Lambert-Beer law cannot be used due to the multiple reflections in the wafer.
+\subsubsection{BCC method: incoherent multiple reflections }
+An often used method to determine the absorption coefficient from the measured transmission is commonly referred to as the BCC method \cite{Brodsky1977}. The method assumes incoherent transmission in both the thin film and the substrate. It states the transmission $T$ as a function of the film absorption coefficient $\alpha$, the film thickness $d$, and the absorption-free transmission $T_0$ of the c-Si substrate:
+\begin{equation}
+	T = \frac{4T_0^2 e^{-\alpha d}}{(1+T_0)^2 - (1-T_0)^2 e^{-2 \alpha d}}
+.\end{equation}
+A derivation of this equation is given in a paper by Maley \cite{Maley1992}. In addition to assuming incoherent transmission, the equation is also strictly only true for a freely supported film \cite{Brodsky1977}. By making this simplification, the model decouples the transmission of the substrate and the thin film. This is correct if the substrate has zero absorption, and if the refractive indices of the thin film and the substrate are equal. for some wavelength regions these two assumptions seem reasonable.
+
+	In general the refractive index of a-Si:H is not equal to that of the substrate: it depends on the hydrogen content $C_H$. This mismatch causes broad and shallow interference fringes \cite{Langford1992}.
+
+Swanepoel has investigated the effect of thickness variation, surface roughness, and variation in refractive index on the transmission spectrum \cite{Swanepoel1984}.
+
+
+
+A paper by Langford et al. (not to be confused with Lanford) 
+
+Here also add a text about the A.A. Langford paper (1989) 
+
+\subsubsection{Critical literature}
+Swanepoel 1984
+Papers by N. Maley (1992), Langford, Fleet, Nelson et al. (1992), Tzolov et al. (1992)
+\subsubsection{Kramers-Kronig consistent methods}
 \section{Amorphicity}
 \Blindtext[2][1]
