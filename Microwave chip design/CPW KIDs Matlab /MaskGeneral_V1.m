@@ -1,5 +1,5 @@
 
-function MaskGeneral_V1(design_Q,Qdesign_in, Q, output_folder, output_filename, size_multiplier)
+function MaskGeneral_V1
 % to do:TL bridges NEEDS RANdOMIZING FOR BIG ARRaYS for cl;assic KIDs only
 % IMPORTANT FOR Superkids
 % in line 185 the IDCdesign script calcualtes the Fres using the in;putted
@@ -18,7 +18,7 @@ format long g;
 
 % general settings
 writestyle = '% .0f, '; %  '% .0f, '  or '% .0f ' in writeofile.m (last option is clewin only, first for Layouteditor and clewin
-FILE       = strcat(output_folder,'/',output_filename); % name of output file 
+FILE       = 'Test'; % name of output file 
 
 %plotting options
 makefigures     = 0;                  % plots the F spacing atrix
@@ -53,8 +53,7 @@ writeassymbol=1;
 
 % basic KID parameters
 BigSiN          = 0; %0 for small patches, 1 for big area
-%epsDielectric   = 11.44;  % epsilon of the substrate, 11.44 for Si
-epsDielectric   = 10;  % epsilon of the substrate, 10 for a-Si
+epsDielectric   = 11.44;  % epsilon of the substrate, 11.44 for Si
 circleD         = 1200;    % Radius of circle around antenna for absorber layer
 KIDdistance     = 1000;   % in mu
 linewidth       = 10;        % KID hybrid CPW, %PdV hyrbids (no antenna): 1.2 um. Antenna ~= will overwrite
@@ -79,7 +78,7 @@ cd              = 80;      %addn. distance from coupler to KID that will be wide
 vpn             = 5;       %addn. distance from coupler to KID that will be narrow. Total desitance from KID meander to coupler is cd+vpn+tria!%Ignored for superTHz KID
 kidheight       = 700;    % in mu, check antenna size if ok! Use half if half wave..... IS OVERWRITTEN FOR SUPERKIDS
 Qwave           = 1;      % Q wave devices. Note that KID will become 2x higher if HW. Overridden by atenna choice
-%design_Q        = 1; %only 1 is implemented
+design_Q        = 1; %only 1 is implemented
 
 
 %only SuperKID parameters, relevant for IDC
@@ -92,7 +91,7 @@ designIDC       = 2; %1=IDC1b,4-20-4, 6 fingers, 2 = IDC2b, ,8-40-8, 6 fingers, 
 
 % F encoding and Q
 Fshift          = 1;        % multuplies with design F to coreect for kinetic inductance
-%Q               = [50 50 100 100 200]*1E3 ;    % one number for same Lc for all KIDs or array = 
+Q               = [50 50 100 100 200]*1E3 ;    % one number for same Lc for all KIDs or array = 
 Fcenter         = 5.2/Fshift;           % 
 forbiddenrange  = [10 11]/Fshift; 	%NB!!!: SCript messes up if forbiddenrange is within first 3 MKIDs (i.e Fcenter ~=forbiddenrange)
 scaled_dF       = 0;        %if =1 dF is below in fraction of Fres; if 0 then dF is in GHz
@@ -152,7 +151,7 @@ mesh            = 20;   %point meshing used for bends
 RTL             = 200;  %though line bend radius MUST BE SMALLER THAN kidheight
 
 % TL bridges NEEDS RANdOMIZING FOR BIG ARRaYS!
-TLbridges           = 0;    %set to 0 if no bridges desired, 1 TL bridges, 2 between KIDs, 2 TLbridges, only 1 bridge in between KIDs
+TLbridges           = 1;    %set to 0 if no bridges desired, 1 TL bridges, 2 between KIDs, 2 TLbridges, only 1 bridge in between KIDs
 tlbwidth            =16;    %width of the bridges
 tlpolyw             = tlbwidth+20;          %width of dielectric underneath bridge
 bridgefromcoupler   = 200;	%distance of bridge from coupler
@@ -207,7 +206,7 @@ if IDCsuperKID == 1
     [Couplength, tlgap, tlwidth, IDCtoTline, NbTiN, Alu, n_2arms, data, params, Qdesign] = ...
         selectIDCdesign(designIDC, NbTiN, Alu, ed, linewidth, gapwidth);
 elseif IDCsuperKID == 0
-    [Qdesign, coupL, coupG, tlgap, tlwidth, td, epsilon_substrate] = select_Classicdesign(design_Q, Qdesign_in, size_multiplier);
+    [Qdesign, coupL, coupG, tlgap, tlwidth, td, epsilon_substrate] = select_Classicdesign(design_Q);
     widelinewidth   = coupL;
     widegapwidth    = coupG;    
 end
