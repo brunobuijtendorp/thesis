@@ -1,3 +1,4 @@
+function Qdesign = readsonnetCoupler(file, psort, numparam, numheaders)
 % readsonnetCoupler
 %reads coupler sim and outputs the standard matrix needed for my script
 %% Input and data read
@@ -26,11 +27,11 @@
 % NB: Coupler length is defined as the TOTAL length of the central line,
 % incl vertical piece
 %
-clear variables
-file = 'SuperkidV1_Coupler3';
-psort = 3;      % variable that has the coupler length
-numparam = 4;   % total # of parameters of the SONNEt file
-numheaders = 1; % 1 or 2, SONNET bitches around with this one
+%clear variables
+%file = 'SuperkidV1_Coupler3';
+%psort = 3;      % variable that has the coupler length
+%numparam = 4;   % total # of parameters of the SONNEt file
+%numheaders = 1; % 1 or 2, SONNET bitches around with this one
 
 %%%%%%%
 format('long','e');
@@ -69,7 +70,7 @@ while n<100
         else
             textscan(fid,'%*[^\r\n]',1);
         end
-        
+
     end
     n=n+1;
 end
@@ -92,4 +93,4 @@ data(2:end,2:end) = datasorted;
 Qdesign=data;
 
 %%%%
-
+end
