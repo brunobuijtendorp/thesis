@@ -1,3 +1,4 @@
+function Qdesign = readsonnetCoupler(file, psort, numparam, numheaders)
 % readsonnetCoupler
 %reads coupler sim and outputs the standard matrix needed for my script
 %% Input and data read
@@ -92,4 +93,4 @@ data(2:end,2:end) = datasorted;
 Qdesign=data;
 
 %%%%
-
+end
