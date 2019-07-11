@@ -1,5 +1,5 @@
 
-function MaskGeneral_V1(design_Q,Qdesign_in, Q, output_folder, output_filename, size_multiplier)
+function MaskGeneral_V1(design_Q,Qdesign_in, Q, output_folder, output_filename, size_multiplier, Fcenter_in, dF_in, KIDdistance_in, kidheight_in)
 % to do:TL bridges NEEDS RANdOMIZING FOR BIG ARRaYS for cl;assic KIDs only
 % IMPORTANT FOR Superkids
 % in line 185 the IDCdesign script calcualtes the Fres using the in;putted
@@ -58,7 +58,7 @@ BigSiN          = 0; %0 for small patches, 1 for big area
 %epsDielectric   = 11.44;  % epsilon of the substrate, 11.44 for Si
 epsDielectric   = epsilon_substrate_narrow;  % epsilon of the substrate, 10 for a-Si
 circleD         = 1200;    % Radius of circle around antenna for absorber layer
-KIDdistance     = 1000;   % in mu
+KIDdistance     = KIDdistance_in;   % in mu
 linewidth       = coupL_narrow;        % KID hybrid CPW, %PdV hyrbids (no antenna): 1.2 um. Antenna ~= will overwrite
 gapwidth        = coupG_narrow; 
 SiNpatchaw      = 6;      % alignemnt tolerance (total) of patches SiN
@@ -67,7 +67,7 @@ Lc_const        = 0;       % set to 1 to m,aintain a single coupler length (clas
 KillKidTline    = 0;      %if set to 1 T;ine written in KID write is allowed to be removed
 FullHybrid      = 0;      % 1 makes the central line entirely of Al
 antenna         = 0; 	%
-ed              = 40;	%size of last vertical part towards the antenna, will be overwritten for specific antenna
+ed              = 2;	%size of last vertical part towards the antenna, will be overwritten for specific antenna
 tria            = 12;   %height of triangles used to couple section sof differeht widths
 SinglelayerKID  = 1;  	%=1 if single layer KID is to be written (needs checking)
 
@@ -79,7 +79,7 @@ fracn           = 2;  %Alu length -1, shortest possible Al; :0<fracn<1: gives th
 ncurves         = 7;      % number of full length horizontal KID bars in central part
 cd              = 80;      %addn. distance from coupler to KID that will be wide must be larger than Cgap+Cline. Ignored for superTHz KID
 vpn             = 5;       %addn. distance from coupler to KID that will be narrow. Total desitance from KID meander to coupler is cd+vpn+tria!%Ignored for superTHz KID
-kidheight       = 700;    % in mu, check antenna size if ok! Use half if half wave..... IS OVERWRITTEN FOR SUPERKIDS
+kidheight       = kidheight_in;    % in mu, check antenna size if ok! Use half if half wave..... IS OVERWRITTEN FOR SUPERKIDS
 Qwave           = 1;      % Q wave devices. Note that KID will become 2x higher if HW. Overridden by atenna choice
 %design_Q        = 1; %only 1 is implemented
 
@@ -95,10 +95,10 @@ designIDC       = 2; %1=IDC1b,4-20-4, 6 fingers, 2 = IDC2b, ,8-40-8, 6 fingers, 
 % F encoding and Q
 Fshift          = 1;        % multuplies with design F to coreect for kinetic inductance
 %Q               = [50 50 100 100 200]*1E3 ;    % one number for same Lc for all KIDs or array = 
-Fcenter         = 5.2/Fshift;           % 
+Fcenter         = Fcenter_in/Fshift;           % 
 forbiddenrange  = [10 11]/Fshift; 	%NB!!!: SCript messes up if forbiddenrange is within first 3 MKIDs (i.e Fcenter ~=forbiddenrange)
 scaled_dF       = 0;        %if =1 dF is below in fraction of Fres; if 0 then dF is in GHz
-dF              = 0.01;    	%see above, fraction of Fo or in GHz
+dF              = dF_in;    	%see above, fraction of Fo or in GHz
 makescaledQ     = 0 ;     	%Scales Q factor
 disp(['Fc df Q: ' num2str([Fcenter dF mean(Q)])]);
 

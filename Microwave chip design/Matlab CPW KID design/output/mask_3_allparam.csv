@@ -1,2 +1,2 @@
 Fcenter,dF,Q,nkids,min(Fres),max(Fres),KIDdistance,kidheight,linewidth,gapwidth,widelinewidth,widegapwidth,Rlineratio,R,ncurves,cd,ed,vpn
-5.2,0.01,20600,5,5180,5220,1000,700,9,6,9,6,2.9972,31.4706,7,80,40,5
+5.5,0.1,28600,5,5300,5700,1500,1500,9,6,9,6,7.69748,80.8235,7,80,2,5

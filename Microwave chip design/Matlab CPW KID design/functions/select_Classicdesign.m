@@ -43,10 +43,18 @@ end
 if design_Q == 2
     coupL = 3 * size_multiplier;	%coupler line
     coupG = 2 * size_multiplier;  	%coupler gap
-    td = 2; 	%metal strip between coupler and through line
-    tlgap = 10;    %tline
+    td = 3; 	%metal strip between coupler and through line
+    tlgap = 8;    %tline
     tlwidth = 20;    %tlinegap
-    eps_sub = 10; % 10 = a-Si
+    eps_sub = 8; % 10 = a-Si
+% High Q design
+elseif design_Q == 3
+    coupL = 3 * size_multiplier;	%coupler line
+    coupG = 2 * size_multiplier;  	%coupler gap
+    td = 32; 	%metal strip between coupler and through line
+    tlgap = 8;    %tline
+    tlwidth = 20;    %tlinegap
+    eps_sub = 8; % 10 = a-Si
 else
     error('not implemented IDC')
 end
