@@ -40,6 +40,7 @@ eps_sub     = 11.44;
 disp('Si 6-10-6 KID on 8-20-8 Tline')
 end
 
+% Regular design
 if design_Q == 2
     coupL = 3 * size_multiplier;	%coupler line
     coupG = 2 * size_multiplier;  	%coupler gap
@@ -47,7 +48,8 @@ if design_Q == 2
     tlgap = 8;    %tline
     tlwidth = 20;    %tlinegap
     eps_sub = 8; % 10 = a-Si
-% High Q design
+    
+% 9x sized KID high Q design (larger td)
 elseif design_Q == 3
     coupL = 3 * size_multiplier;	%coupler line
     coupG = 2 * size_multiplier;  	%coupler gap
@@ -55,6 +57,22 @@ elseif design_Q == 3
     tlgap = 8;    %tline
     tlwidth = 20;    %tlinegap
     eps_sub = 8; % 10 = a-Si
+% 1x sized KID high Q design (larger td)
+elseif design_Q == 4
+    coupL = 3 * size_multiplier;	%coupler line
+    coupG = 2 * size_multiplier;  	%coupler gap
+    td = 6; 	%metal strip between coupler and through line
+    tlgap = 8;    %tline
+    tlwidth = 20;    %tlinegap
+    eps_sub = 8; % 10 = a-Si
+% 3x sized KID high Q design (larger td)
+elseif design_Q == 5
+    coupL = 3 * size_multiplier;	%coupler line
+    coupG = 2 * size_multiplier;  	%coupler gap
+    td = 16; 	%metal strip between coupler and through line
+    tlgap = 8;    %tline
+    tlwidth = 20;    %tlinegap
+    eps_sub = 8; % 10 = a-Si    
 else
     error('not implemented IDC')
 end

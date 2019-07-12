@@ -35,9 +35,21 @@ def polymodel(x,mu150,sigma150,a150,\
           mu660,sigma660,a660)
     return y
 
+def baseline_correction(x,y):
+    y = y[x < 100]
+    x = x[x < 100]
+    def horizontal_line(x,a):
+        y = a
+        return y
+    p0 = [0]
+    popt, pcov = optimize.curve_fit(horizontal_line, x, y, p0=p0)
+    return popt[0]
+
 def fit(x,y,poly=0):
     y = y[x<700]
     x = x[x<700]
+  
+    y -= baseline_correction(x,y)
 
     p0 = [150,50,550,\
           330,50,500,\
@@ -96,5 +108,11 @@ def fit(x,y,poly=0):
 def relative_intensity(popt,xmin=0,xmax=700,dx=0.001):
     x = np.arange(0,700,0.001)
     y = np.trapz(gaussian(x,popt[0],popt[1],popt[2])) / np.trapz(gaussian(x,popt[9],popt[10],popt[11]))
-    dtheta = (y - 0.606)/0.0078
-    return y, dtheta    
+    sigma_TO = popt[10]
+    FWHM_TO = 2*np.sqrt(2*np.log(2)) * sigma_TO
+
+    dtheta_ratio = (y - 0.0606)/0.0078
+    dtheta_FWHM = (FWHM_TO - 18.4) / 6.6
+    dtheta_omega = (popt[9] - 505.5)/(-2.5)
+    
+    return y, dtheta_ratio, dtheta_FWHM, dtheta_omega    
