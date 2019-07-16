@@ -44,7 +44,7 @@ for i = 1:3
     psort_i = psort(i);
     Qdesign = readsonnetCoupler(filename, psort_i, numparam, numheaders_i);
     % Output mask file
-    Q_i = Q{i};
+    Q_i = Q{i}
     Fcenter_in_i = Fcenter_in(i);
     size_multiplier_i = size_multiplier(i);
     output_filename_i = strcat(output_filename,'_',int2str(size_multiplier_i));
@@ -52,11 +52,11 @@ for i = 1:3
 end
 
 %% Output mask design of Q = 300k, 1x sized KID (5x identical because dF set to zero, just cut out one)
- i = 1;
+ i = 1
  KIDdistance_i = KIDdistance_in + 100 * 3^(i-1);
  kidheight_i = kidheight_in * 1.5^(i-1);
 %Read Sonnet data
-Q_i = 1E3 * [300 300 300 300 300];
+Q_i = 1E3 * [300 300 300 300 300]
 filename = '190711_1_highQ_lossless';
  numheaders_i = 1;
  psort_i = 4;
@@ -71,11 +71,11 @@ filename = '190711_1_highQ_lossless';
  MaskGeneral_V1(design_Q, Qdesign, Q_i, strcat(script_dir, 'output'), output_filename_i, size_multiplier_i, Fcenter_in_i, dF_in, KIDdistance_i, kidheight_i);
  
  %% Output mask design of Q = 100k 3x sized KID (5x identical because dF set to zero, just cut out one)
- i = 2;
+ i = 2
  KIDdistance_i = KIDdistance_in + 100 * 3^(i-1);
  kidheight_i = kidheight_in * 1.5^(i-1);
 %Read Sonnet data
-Q_i = 1E3 * [100 100 100 100 100];
+Q_i = 1E3 * [100 100 100 100 100]
 filename = '190711_3_highQ_lossless';
  Qdesign = readsonnetCoupler(filename, psort_i, numparam, numheaders_i);
  % Output mask file
@@ -87,11 +87,11 @@ filename = '190711_3_highQ_lossless';
  MaskGeneral_V1(design_Q, Qdesign, Q_i, strcat(script_dir, 'output'), output_filename_i, size_multiplier_i, Fcenter_in_i, dF_in, KIDdistance_i, kidheight_i);
  
  %% Output mask design of Q = 300k 3x sized KID (5x identical because dF set to zero, just cut out one)
- i = 2;
+ i = 2
  KIDdistance_i = KIDdistance_in + 100 * 3^(i-1);
  kidheight_i = kidheight_in * 1.5^(i-1);
 %Read Sonnet data
-Q_i = 1E3  * [300 300 300 300 300];
+Q_i = 1E3 * 2/3 * [300 300 300 300 300]
 filename = '190711_3_highQ_lossless';
  Qdesign = readsonnetCoupler(filename, psort_i, numparam, numheaders_i);
  % Output mask file
@@ -103,11 +103,11 @@ filename = '190711_3_highQ_lossless';
  MaskGeneral_V1(design_Q, Qdesign, Q_i, strcat(script_dir, 'output'), output_filename_i, size_multiplier_i, Fcenter_in_i, dF_in, KIDdistance_i, kidheight_i);
 
 %% Output mask design of Q = 100k, 9x sized KID (5x identical because dF set to zero, just cut out one)
- i = 3;
+ i = 3
  KIDdistance_i = KIDdistance_in + 100 * 3^(i-1);
  kidheight_i = kidheight_in * 1.5^(i-1);
 %Read Sonnet data
-Q_i = 1E3 * [100 100 100 100 100];
+Q_i = 1E3 * [100 100 100 100 100]
 filename = '190711_9_highQ_lossless';
  numheaders_i = 2;
  psort_i = 5;
@@ -121,11 +121,11 @@ filename = '190711_9_highQ_lossless';
  MaskGeneral_V1(design_Q, Qdesign, Q_i, strcat(script_dir, 'output'), output_filename_i, size_multiplier_i, Fcenter_in_i, dF_in, KIDdistance_i, kidheight_i);
 
 %% Output mask design of Q = 300k, 9x sized KID (5x identical because dF set to zero, just cut out one)
-i = 3;
+i = 3
 KIDdistance_i = KIDdistance_in + 100 * 3^(i-1);
 kidheight_i = kidheight_in * 1.5^(i-1);
 %Read Sonnet data
-Q_i = 1E3 * [300 300 300 300 300];
+Q_i = 1E3 * [300 300 300 300 300]
 filename = '190711_9_highQ_lossless';
  numheaders_i = 2;
  psort_i = 5;
