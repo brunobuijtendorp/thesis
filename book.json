@@ -1,5 +1,6 @@
 {
     "plugins": [
          "-sharing"
+         "include-html"
     ]
 }
