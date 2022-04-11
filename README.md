@@ -2,5 +2,5 @@
 
 Bla bla bla 
 
-!INCLUDE "test.html"
+Test
 
