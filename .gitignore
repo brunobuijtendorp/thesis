@@ -1,3 +1,4 @@
 mdbook
-book
+book/
+src/
 .DS_store
